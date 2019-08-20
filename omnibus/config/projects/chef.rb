@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-name "chef"
-friendly_name "Chef Infra Client"
-maintainer "Chef Software, Inc. <maintainers@chef.io>"
-homepage "https://www.chef.io"
+name "dbonc"
+friendly_name "dbosoft NC Client"
+maintainer "dbosoft GmbH"
+homepage "https://www.dbosoft.eu"
 license "Chef EULA"
 license_file "CHEF-EULA.md"
 
@@ -34,7 +34,7 @@ if windows?
   #       Native gems will use gcc which will barf on files with spaces,
   #       which is only fixable if everyone in the world fixes their Makefiles
   install_dir  "#{default_root}/opscode/#{name}"
-  package_name "chef-client"
+  package_name "dbonc-client"
 else
   install_dir "#{default_root}/#{name}"
 end

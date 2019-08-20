@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
     Dir.glob("{lib}/**/*", File::FNM_DOTMATCH).reject { |f| File.directory?(f) }
 
   spec.bindir = "bin"
-  spec.executables = %w{ chef-apply chef-client chef-resource-inspector chef-service-manager chef-shell chef-solo chef-windows-service }
+  spec.executables = %w{ dbonc-apply dbonc-client dbonc-resource-inspector dbonc-service-manager dbonc-shell dbonc-solo dbonc-windows-service }
 end

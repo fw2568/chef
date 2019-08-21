@@ -34,7 +34,7 @@ end
 task install: :super_install
 
 # make sure we build the correct gemspec on windows
-gemspec = Gem.win_platform? ? "chef-universal-mingw32" : "chef"
+gemspec = Gem.win_platform? ? "chef-universal-mingw32" : "dbonc"
 Bundler::GemHelper.install_tasks name: gemspec
 
 # this gets appended to the normal bundler install helper

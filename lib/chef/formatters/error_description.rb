@@ -67,7 +67,7 @@ class Chef
       end
 
       def error_context_info
-        context_info = { chef_version: Chef::VERSION }
+        context_info = { dbonc_version: Chef::VERSION }
         if Chef.node
           context_info[:platform] = Chef.node["platform"]
           context_info[:platform_version] = Chef.node["platform_version"]

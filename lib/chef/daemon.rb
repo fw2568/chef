@@ -52,7 +52,7 @@ class Chef
             Chef::Application.fatal!("There is no fork: #{e.message}")
           end
         else
-          Chef::Application.fatal!("Chef is already running pid #{pid_from_file}")
+          Chef::Application.fatal!("#{Chef::Dist::PRODUCT} is already running pid #{pid_from_file}")
         end
       end
 
